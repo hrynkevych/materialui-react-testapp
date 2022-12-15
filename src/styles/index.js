@@ -1,3 +1,5 @@
+import { createTheme } from "@mui/material";
+
 export const Colors = {
   primary: "#00adb5",
   secondary: "#00c7c0",
@@ -19,10 +21,28 @@ export const Colors = {
 
 // TODO: define overrides object to create theme
 const overrides = { 
+  palette: {},
+  components: {
+    MuiDivider: {
+      styleOverrides: {
+        root: {
+          backgroundColor: Colors.primary,
+          height: 'auto'
+        }
+      }
+    }
+  }
 };
 
-// TODO: use overrides object to create theme
-// const theme =;
+const getNewPalette = (colors) => {
+  for (const property in colors)
+  overrides.palette[property] = { 'main': colors[property] };
+}
 
+getNewPalette(Colors);
+
+// TODO: use overrides object to create theme
+const theme = createTheme(overrides);
+console.log(theme);
 export { overrides };
 export default theme;
