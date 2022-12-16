@@ -57,8 +57,8 @@ function MenuComp({ flexDirection }) {
                         page === 'Stories' ?
                             <ListItemButton key={page} sx={{display: 'flex', alignItems: 'center'}}>
                                 <Box sx={{display: 'flex', alignItems: 'center'}} onClick={handleClick}>
-                                        <Typography variant='inherit' component="div">
-                                            {page.toUpperCase()}
+                                        <Typography variant='inherit' component="div" sx={{textTransform: 'uppercase'}}>
+                                            {page}
                                         </Typography>
                                         <ExpandMoreIcon sx={{fontSize: '18px'}} />
                                 </Box>
@@ -68,8 +68,8 @@ function MenuComp({ flexDirection }) {
                                 </Menu>
                             </ListItemButton>
                         :   <ListItemButton key={page}>
-                                <Typography variant='inherit' component="div">
-                                    {page.toUpperCase()}
+                                <Typography variant='inherit' component="div" sx={{textTransform: 'uppercase'}}>
+                                    {page}
                                 </Typography>
                             </ListItemButton>
                     )
