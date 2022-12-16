@@ -1,70 +1,30 @@
-import { AppBar, Toolbar, IconButton, Typography, Menu, MenuItem, ListItemButton, List, Divider } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu.js';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { AppBar, Toolbar, IconButton, Typography, Divider, useMediaQuery, useTheme } from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import PersonIcon from '@mui/icons-material/Person';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { Box } from '@mui/system';
-import { useState } from 'react';
 import ActionButtons from '../ActionButtons/ActionButtons';
+import Logo from '../Logo/Logo';
+import DrawerComp from '../DrawerComp/DrawerComp';
+import MenuComp from '../MenuComp/MenuComp';
 
 function Header() {
-    const [anchorElm, setAnchorElm] = useState(null);
-    const [open, setOpen] = useState(false);
-
-    const handleClose = () => {
-        setAnchorElm(null);
-        setOpen(false);
-    }
-
-    const handleClick = (e) => {
-        setAnchorElm(e.currentTarget);
-        setOpen(true);
-    }
+    const theme = useTheme();
+    const breakpointsDownMd = useMediaQuery(theme.breakpoints.down('md'));
+    const breakpointsUpMd = useMediaQuery(theme.breakpoints.up('md'));
 
     return (
         <>
             <AppBar color='white' sx={{color: 'black', height: '6.4rem'}}>
                 <Toolbar sx={{height: '100%'}}>
                     <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%'}} component='div'>
-                        {/* <Box>
-                            <IconButton>
-                                <MenuIcon />
-                            </IconButton>
-                        </Box> */}
-
-                        <Typography color='secondary' sx={{fontFamily: 'La Belle Aurore', fontSize: '46px'}} variant='h3' component="div">
-                            Cats & friends
-                        </Typography>
-                        <List sx={{display: 'flex', fontSize: '15px'}}>
-                            <ListItemButton>
-                                <Typography variant='inherit' component="div">
-                                    HOME
-                                </Typography>
-                            </ListItemButton>
-                            <ListItemButton>
-                                <Typography variant='inherit' component="div">
-                                    VOLUNTEER
-                                </Typography>
-                            </ListItemButton>
-                            <ListItemButton>
-                                <Box sx={{display: 'flex', alignItems: 'center'}} onClick={handleClick}>
-                                    <Typography variant='inherit' component="div">
-                                        STORIES
-                                    </Typography>
-                                    <ExpandMoreIcon sx={{fontSize: '18px'}} />
-                                </Box>
-                                <Menu anchorEl={anchorElm} open={open} onClose={handleClose}>
-                                    <MenuItem onClick={handleClose}>Blog</MenuItem>
-                                    <MenuItem onClick={handleClose}>Podcast</MenuItem>
-                                </Menu>
-                            </ListItemButton>
-                            <ListItemButton>
-                                <Typography variant='inherit' component="div">
-                                    LOGIN
-                                </Typography>
-                            </ListItemButton>
-                        </List>
+                        {breakpointsDownMd && <DrawerComp />}
+                        <Logo>
+                            <Typography color='secondary' sx={{fontFamily: 'La Belle Aurore', fontSize: '46px'}}>
+                                Cats & friends
+                            </Typography>
+                        </Logo>
+                        {breakpointsUpMd && <MenuComp flexDirection='row'/>}
                         <ActionButtons sx={{display: 'flex', gap: '2rem', marginRight: '0.625rem', marginLeft: '0.625rem'}}>
                             <IconButton color='muted'>
                                 <FavoriteIcon />
