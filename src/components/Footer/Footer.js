@@ -1,7 +1,6 @@
 import React from "react";
-import Grid from "@material-ui/core/Grid";
 import SimpleBottomNavigation from "../BottomNav/BottomNav.js";
-import { Box, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
 const Footer = () => (
   <>
