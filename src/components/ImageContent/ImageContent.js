@@ -1,10 +1,12 @@
 import * as React from 'react';
+import { useState, useEffect } from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { Typography } from '@mui/material';
+import { Typography, useMediaQuery } from '@mui/material';
+import theme from '../../styles/index.js' 
 
 export default function ImageContent() {
   const itemData = [
@@ -74,20 +76,30 @@ export default function ImageContent() {
       id: 13
     },
   ];
+const [column, setColumn] = useState(0);
+
+const xs = useMediaQuery(theme.breakpoints.up('xs'));
+const md = useMediaQuery(theme.breakpoints.up('sm'));
+const lg = useMediaQuery(theme.breakpoints.up('md'));
+
+useEffect(() => {
+  if(xs) {
+    setColumn(1)
+  }
+  if(md) {
+    setColumn(2)
+  }
+  if(lg) {
+    setColumn(3)
+  }
+}, [xs, md, lg])
 
   return (
     <>
     <Typography variant='h5' textAlign={'center'}>Waiting for their owners</Typography>
-      <ImageList sx={{
-            columnCount: {
-                xs: '1 !important',
-                sm: '2 !important',
-                md: '3 !important',
-                lg: '3 !important',
-                xl: '3 !important',
-        },
-        }}
-        variant="masonry" cols={3} gap={8}>
+    
+      <ImageList cols={column}
+        variant="masonry" gap={8}>
         {itemData.map((item) => (
           <ImageListItem key={item.id}>
             <img
