@@ -5,7 +5,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { Typography, useMediaQuery } from '@mui/material';
+import { Box, Typography, useMediaQuery } from '@mui/material';
 import theme from '../../styles/index.js' 
 
 export default function ImageContent() {
@@ -95,8 +95,10 @@ useEffect(() => {
 }, [xs, md, lg])
 
   return (
-    <>
-    <Typography variant='h5' textAlign={'center'}>Waiting for their owners</Typography>
+    <Box component='div' sx={{margin: '0 5vw 5vw'}}>
+    <Typography variant='h5' textAlign={'center'} sx={{marginTop: '15px'}}>
+      Waiting for their owners
+    </Typography>
     
       <ImageList cols={column}
         variant="masonry" gap={8}>
@@ -127,6 +129,6 @@ useEffect(() => {
           </ImageListItem>
         ))}
       </ImageList>
-      </>
+      </Box>
   );
 }

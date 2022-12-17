@@ -17,7 +17,7 @@ export default function SimpleBottomNavigation() {
         onChange={(event, newValue) => {
           setValue(newValue);
         }} 
-        sx={{color: 'white.main', backgroundColor: 'dark_footer.main'}} 
+        sx={{color: 'light.main', backgroundColor: 'dark_footer.main'}} 
       >
         <BottomNavigationAction style={{color: 'white'}} icon={<FacebookIcon />} />
         <BottomNavigationAction style={{color: 'white'}} icon={<TwitterIcon />} />
