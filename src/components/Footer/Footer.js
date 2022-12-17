@@ -7,7 +7,7 @@ const Footer = () => (
   <Box sx={{color: 'white.main', backgroundColor: 'dark_footer.main'}}>
     <Grid  container spacing={2}>
       <Grid item md={12} lg={6}>
-        <Grid align={"left"} gutterBottom>
+        <Grid align={"left"}>
           <Typography variant='inherit' component="div" sx={{textTransform: 'uppercase'}}>
             About us
           </Typography>
@@ -20,7 +20,7 @@ const Footer = () => (
         </Grid>
       </Grid>
       <Grid item xs={12} sm={6}>
-        <Grid align={"left"} gutterBottom>
+        <Grid align={"left"}>
           <Typography variant='inherit' component="div" sx={{textTransform: 'uppercase'}}>
             Information
           </Typography>
@@ -30,7 +30,7 @@ const Footer = () => (
         </Grid>
       </Grid>
       <Grid item xs={12} sm={6}>
-        <Grid align={"left"} gutterBottom>
+        <Grid align={"left"}>
           <Typography variant='inherit' component="div" sx={{textTransform: 'uppercase'}}>
             My account
           </Typography>
