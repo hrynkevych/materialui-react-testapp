@@ -62,4 +62,4 @@ getNewPalette(Colors);
 const theme = createTheme(overrides);
 
 export { overrides };
-// export default theme;
+export default theme;
