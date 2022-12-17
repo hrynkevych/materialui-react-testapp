@@ -16,7 +16,7 @@ export const Colors = {
   dove_gray: "#d5d5d5",
   body_bg: "#f3f6f9",
   white: "#fff",
-  black: "#000",
+  black: "#000"
 };
 
 // TODO: define overrides object to create theme
@@ -28,6 +28,23 @@ const overrides = {
         root: {
           backgroundColor: Colors.primary,
           height: 'auto'
+        }
+      }
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          backgroundColor: Colors.body_bg,
+          borderRadius: '0',
+          boxShadow: 'none'
+        }
+      }
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: '0',
+          fontWeight: '600'
         }
       }
     }
