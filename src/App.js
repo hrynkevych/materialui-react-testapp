@@ -4,7 +4,7 @@ import Header from "./components/Header/Header.js"
 import theme from './styles'
 import MasonryImageList from './components/ImageContent/ImageContent.js'
 import FooterEx from './components/Footer/Footer.js' 
-import ActionIcons from './ActionIconsMobile/ActionIconsMobile.js'
+import ActionIcons from "./components/ActionIcons/ActionIconsStyled.js"
 
 function App() {
     const breakpointsDownMd = useMediaQuery(theme.breakpoints.down('md'));
