@@ -5,6 +5,7 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
+
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
 
@@ -16,11 +17,11 @@ export default function SimpleBottomNavigation() {
         onChange={(event, newValue) => {
           setValue(newValue);
         }} 
-        style={{ color: '#F7ECDE', backgroundColor: '#2C3333' }} 
+        sx={{color: 'white.main', backgroundColor: 'dark_footer.main'}} 
       >
-        <BottomNavigationAction style={{ color: '#F7ECDE'}} icon={<FacebookIcon />} />
-        <BottomNavigationAction style={{ color: '#F7ECDE'}} icon={<TwitterIcon />} />
-        <BottomNavigationAction style={{ color: '#F7ECDE'}} icon={<InstagramIcon />} />
+        <BottomNavigationAction style={{color: 'white'}} icon={<FacebookIcon />} />
+        <BottomNavigationAction style={{color: 'white'}} icon={<TwitterIcon />} />
+        <BottomNavigationAction style={{color: 'white'}} icon={<InstagramIcon />} />
       </BottomNavigation>
     </Box>
   );

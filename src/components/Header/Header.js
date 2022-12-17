@@ -3,7 +3,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import PersonIcon from '@mui/icons-material/Person';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { Box } from '@mui/system';
-import ActionButtons from '../ActionButtons/ActionButtons';
+import ActionButtons from '../ActionIcons/ActionIconsStyled';
 import Logo from '../Logo/Logo';
 import DrawerComp from '../DrawerComp/DrawerComp';
 import MenuComp from '../MenuComp/MenuComp';
@@ -25,7 +25,7 @@ function Header() {
                             </Typography>
                         </Logo>
                         {breakpointsUpMd && <MenuComp flexDirection='row'/>}
-                        <ActionButtons sx={{display: 'flex', gap: '2rem', marginRight: '0.625rem', marginLeft: '0.625rem'}}>
+                        {breakpointsUpMd && <ActionButtons sx={{display: 'flex', gap: '2rem', marginRight: '0.625rem', marginLeft: '0.625rem'}}>
                             <IconButton color='muted'>
                                 <FavoriteIcon />
                             </IconButton>
@@ -37,7 +37,7 @@ function Header() {
                             <IconButton color='muted'>
                                 <NotificationsIcon />
                             </IconButton>
-                        </ActionButtons>
+                        </ActionButtons>}
                     </Box>
                 </Toolbar>
             </AppBar>

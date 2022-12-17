@@ -16,7 +16,9 @@ export const Colors = {
   dove_gray: "#d5d5d5",
   body_bg: "#f3f6f9",
   white: "#fff",
-  black: "#000"
+  black: "#000",
+  shaft_opacity: "rgba(0, 0, 0, 0.7)",
+  dark_footer: "#2c3333"
 };
 
 // TODO: define overrides object to create theme
@@ -45,6 +47,15 @@ const overrides = {
         root: {
           borderRadius: '0',
           fontWeight: '600'
+        }
+      }
+    },
+    MuiImageListItemBar: {
+      styleOverrides: {
+        root: {
+          '&:hover': {
+            backgroundColor: Colors.shaft_opacity
+          }
         }
       }
     }
