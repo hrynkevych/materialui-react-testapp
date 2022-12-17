@@ -4,12 +4,12 @@ import PersonIcon from '@mui/icons-material/Person';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { Divider, IconButton } from '@mui/material';
-import ActionButtons from '../components/ActionIcons/ActionIconsStyled';
+import ActionIcons from '../ActionIcons/ActionIconsStyled';
 
 export default function ActionIconsMobile() {
   return (
     <Box position='fixed' sx={{bgcolor: 'inverse.main', top: 'auto', bottom: 0, width: '100%'}}>
-      <ActionButtons color='primary' sx={{ display: 'flex', justifyContent: 'space-around'}}>
+      <ActionIcons color='primary' sx={{ display: 'flex', justifyContent: 'space-around', padding: '0 5.5vw'}}>
           <IconButton color='primary'>
               <FavoriteIcon />
           </IconButton>
@@ -21,7 +21,7 @@ export default function ActionIconsMobile() {
           <IconButton color='primary'>
               <NotificationsIcon />
           </IconButton>
-      </ActionButtons>
+      </ActionIcons>
     </Box>
   );
 }
