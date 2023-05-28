@@ -15,7 +15,7 @@ const Footer = () => (
           </Grid>
         
           <Grid>
-        Ukraine is a country in Eastern Europe. It is the second-largest European country after Russia, which it borders to the east and northeast. Ukraine covers approximately 600,000 square kilometres.
+          Since January 2008, our mission has been to improve the health of homeless animals and increase their chances for survival and adoption. We aim to eliminate animal homelessness and euthanasia.
           </Grid>
 
         <Grid>
@@ -32,16 +32,14 @@ const Footer = () => (
           
         </Grid>
         <Grid>
-          Following the collapse of the Soviet Union in 1991, Ukraine regained independence and declared itself neutral,[15] forming a limited military partnership with the post-Soviet Commonwealth of Independent States, while also joining the Partnership for Peace with NATO in 1994.
+          Your donation helps to continue reaching over 12,000 homeless animals a year by donating food and life-saving supplies to rescue groups, shelters, pets of the homeless, and struggling pet owners.
         </Grid>
       </Grid>
-
-
-
+      
       <Grid item align={"left"}>
         <Grid item xs={12} sm={6} variant='inherit' component="div" sx={{textTransform: 'uppercase'}}>
           
-            My account
+            Our account
           
         </Grid>
         <Grid>
