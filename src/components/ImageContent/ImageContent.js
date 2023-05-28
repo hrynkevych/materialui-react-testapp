@@ -11,67 +11,67 @@ import theme from '../../styles/index.js'
 export default function ImageContent() {
   const itemData = [
     {
-      img: "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
+      img: "https://images.pexels.com/photos/1643457/pexels-photo-1643457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Shyster",
       id: 1
     },
     {
-      img: "https://upload.wikimedia.org/wikipedia/commons/1/15/Cat_August_2010-4.jpg",
+      img: "https://images.pexels.com/photos/1828875/pexels-photo-1828875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Lazy",
       id: 2
     },
     {
-      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2022%2F09%2F22%2Ffacts-about-cats-1292117990-2000.jpg&q=60",
+      img: "https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Brandy",
       id: 3
     },
     {
-      img: "https://cdn.theatlantic.com/thumbor/d8lh_KAZuOgBYslMOP4T0iu9Fks=/0x62:2000x1187/1600x900/media/img/mt/2018/03/AP_325360162607/original.jpg",
+      img: "https://images.pexels.com/photos/977935/pexels-photo-977935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Milk",
       id: 4
     },
     {
-      img: "https://media.npr.org/assets/img/2021/08/11/gettyimages-1279899488_wide-f3860ceb0ef19643c335cb34df3fa1de166e2761-s1100-c50.jpg",
+      img: "https://images.pexels.com/photos/982300/pexels-photo-982300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Blinds",
       id: 5
     },
     {
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv4dByqg_LrjKE6Z9_Yll7oRKM6u2Zb-TLig&usqp=CAU",
+      img: "https://images.pexels.com/photos/1741206/pexels-photo-1741206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Charles",
       id: 6
     },
     {
-      img: "https://www.petfinder.com/static/75ef39a9e08db93c24b69aa7900c4592/4319a/Dangerous%20cats.jpg",
+      img: "https://images.pexels.com/photos/2173872/pexels-photo-2173872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Laptop",
       id: 7
     },
     {
-      img: "https://www.understandinganimalresearch.org.uk/application/files/thumbnails/page_2x/4915/5800/5951/cat-looking-up-at-animal-technician_cropped.jpg",
+      img: "https://images.pexels.com/photos/1317844/pexels-photo-1317844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Dorothy",
       id: 8
     },
     {
-      img: "https://www.petfinder.com/static/75ef39a9e08db93c24b69aa7900c4592/4319a/Dangerous%20cats.jpg",
+      img: "https://images.pexels.com/photos/755834/pexels-photo-755834.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Feather",
       id: 9
     },
     {
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv4dByqg_LrjKE6Z9_Yll7oRKM6u2Zb-TLig&usqp=CAU",
+      img: "https://images.pexels.com/photos/2686914/pexels-photo-2686914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Storm",
       id: 10
     },
     {
-      img: "https://media.npr.org/assets/img/2021/08/11/gettyimages-1279899488_wide-f3860ceb0ef19643c335cb34df3fa1de166e2761-s1100-c50.jpg",
+      img: "https://images.pexels.com/photos/3525298/pexels-photo-3525298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Candy",
       id: 11
     },
     {
-      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2022%2F09%2F22%2Ffacts-about-cats-1292117990-2000.jpg&q=60",
+      img: "https://images.pexels.com/photos/2361952/pexels-photo-2361952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Sporty",
       id: 12
     },
     {
-      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2022%2F09%2F22%2Ffacts-about-cats-1292117990-2000.jpg&q=60",
+      img: "https://images.pexels.com/photos/1835008/pexels-photo-1835008.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Fluffy",
       id: 13
     },
