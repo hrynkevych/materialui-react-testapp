@@ -11,67 +11,67 @@ import theme from '../../styles/index.js'
 export default function ImageContent() {
   const itemData = [
     {
-      img: "../images/cat1.jfif",
+      img: "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
       title: "Shyster",
       id: 1
     },
     {
-      img: "../images/cat2.jpg",
+      img: "https://upload.wikimedia.org/wikipedia/commons/1/15/Cat_August_2010-4.jpg",
       title: "Lazy",
       id: 2
     },
     {
-      img: "../images/cat3.jfif",
+      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2022%2F09%2F22%2Ffacts-about-cats-1292117990-2000.jpg&q=60",
       title: "Brandy",
       id: 3
     },
     {
-      img: "../images/cat4.jpg",
+      img: "https://cdn.theatlantic.com/thumbor/d8lh_KAZuOgBYslMOP4T0iu9Fks=/0x62:2000x1187/1600x900/media/img/mt/2018/03/AP_325360162607/original.jpg",
       title: "Milk",
       id: 4
     },
     {
-      img: "../images/cat5.jpg",
+      img: "https://media.npr.org/assets/img/2021/08/11/gettyimages-1279899488_wide-f3860ceb0ef19643c335cb34df3fa1de166e2761-s1100-c50.jpg",
       title: "Blinds",
       id: 5
     },
     {
-      img: "../images/cat6.jpg",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv4dByqg_LrjKE6Z9_Yll7oRKM6u2Zb-TLig&usqp=CAU",
       title: "Charles",
       id: 6
     },
     {
-      img: "../images/cat7.jpg",
+      img: "https://www.petfinder.com/static/75ef39a9e08db93c24b69aa7900c4592/4319a/Dangerous%20cats.jpg",
       title: "Laptop",
       id: 7
     },
     {
-      img: "../images/cat8.jpg",
+      img: "https://www.understandinganimalresearch.org.uk/application/files/thumbnails/page_2x/4915/5800/5951/cat-looking-up-at-animal-technician_cropped.jpg",
       title: "Dorothy",
       id: 8
     },
     {
-      img: "../images/cat9.jpg",
+      img: "https://www.petfinder.com/static/75ef39a9e08db93c24b69aa7900c4592/4319a/Dangerous%20cats.jpg",
       title: "Feather",
       id: 9
     },
     {
-      img: "../images/cat10.jpg",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv4dByqg_LrjKE6Z9_Yll7oRKM6u2Zb-TLig&usqp=CAU",
       title: "Storm",
       id: 10
     },
     {
-      img: "../images/cat11.jpg",
+      img: "https://media.npr.org/assets/img/2021/08/11/gettyimages-1279899488_wide-f3860ceb0ef19643c335cb34df3fa1de166e2761-s1100-c50.jpg",
       title: "Candy",
       id: 11
     },
     {
-      img: "../images/cat12.jpg",
+      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2022%2F09%2F22%2Ffacts-about-cats-1292117990-2000.jpg&q=60",
       title: "Sporty",
       id: 12
     },
     {
-      img: "../images/cat13.jpg",
+      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2022%2F09%2F22%2Ffacts-about-cats-1292117990-2000.jpg&q=60",
       title: "Fluffy",
       id: 13
     },
